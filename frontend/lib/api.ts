@@ -1,4 +1,4 @@
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://electronic-bessy-mazzali001-d766a150.koyeb.app'
 
 export interface Task {
   id: number
