@@ -17,6 +17,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "https://hackathon-todo-phase2-seven.vercel.app",
+        "https://hackathon-todo-phase2-qe8tgkoxx-mazz-alis-projects.vercel.app",
         "http://localhost:3000"
     ],
     allow_credentials=True,
