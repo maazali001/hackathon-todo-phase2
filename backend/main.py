@@ -13,15 +13,17 @@ from auth import hash_password, verify_password, create_access_token, verify_tok
 
 app = FastAPI(title="Todo API - Phase II")
 
-# CORS middleware for frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://your-app.vercel.app", 
-                   "http://localhost:3000"],  # In production, specify frontend URL
+    allow_origins=[
+        "https://hackathon-todo-phase2-seven.vercel.app",
+        "http://localhost:3000"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 
 @app.on_event("startup")
